@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label for="man">참여인원(최대 10명)</label>
+                    <input type="number" id="man" min="1" max="10" value="1">
+                </li>
+                <li>
+                    <label for="thing">지원물품(1인당 5개)</label>
+                    <input type="number" id="thing" min="1" max="5" value="1">
+                </li>
+                <li>
+                    <label for="hope">희망 단계(하, 중, 상)</label>
+                    <input type="range" min="1" max="3" value="1">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
