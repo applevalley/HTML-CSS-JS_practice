@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <fieldset id="sub">
+        <legend>수강과목</legend>
+        <ul>
+            <li>
+                <label for="subject">영어회화 초급</label>
+                <input type="text" id="subject" value="오전 9:00 ~ 11:00" readonly>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset id="peo">
+        <legend>신청자</legend>
+        <ul>
+            <li>
+                <label for="name">이름 </label>
+                <input type="text" id="name" autofocus required>
+            </li>
+            <li>
+                <label for="stu_num">학번</label>
+                <input type="text" id="stu_num" placeholder="하이픈없이 입력">
+            </li>
+            <li>
+                <label for="major">학과</label>
+                <select id="major">
+                    <option value="arc">건축공학과</option>
+                    <option value="ind">산업공학과</option>
+                    <option value="elec">전자공학과</option>
+                    <option value="comp" selected>컴퓨터공학과</option>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset id="thing">
+        <legend>교재 주문</legend>
+        <ul>
+            <li>
+                <label for="book">교재</label>
+                <input type="number" id="book" value="1" min="1" max="10">
+            </li>
+            <li>
+                <label for="sheets">워크시트</label>
+                <input type="number" id="sheets" value="1" min="1" max="10">
+            </li>
+            <li>
+                <label for="order">단체주문</label>
+                <input type="number" id="order" value="10" min="10" max="40" step="10">
+            </li>
+        </ul>
+    </fieldset>
+</body>
+</html>

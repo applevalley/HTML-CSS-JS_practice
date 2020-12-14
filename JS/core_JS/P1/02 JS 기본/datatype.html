@@ -1,0 +1,45 @@
+<script>
+    let message = "hello";
+    message = 1231213;
+
+    let num = 123;
+    num = 432.12;
+
+    alert(1 / 0); // 무한대
+    alert(Infinity); // 무한대
+
+    alert("문자" / 2); // NaN
+    alert("문자" / 3 + 4); // NaN
+    console.log('b' + 'a' + ("문자" / 2) + 'a'); //baNaNa
+
+    const bigBigInt = 1236712371623889163673n; // n이 붙으면 BigInt형
+
+    let str1 = "Hello"; // 큰 따옴표
+    let str2 = 'Single quote'; // 작은 따옴표
+    let str3 = `${str1}, pizza`; // 백틱 // Hello, pizza
+    alert(`my answer is ${5 + 7}`); //백틱 안에 표현식 넣기
+    alert("my answer is ${5 + 7}"); // 백틱이 아니면 표현식이 아닌 문자
+
+    let nameCheck = true;
+    let numberCheck = false;
+    let isSmall = 3 < 1;
+    alert(isSmall); // false
+
+    let price = null;
+
+    let height;
+    alert(height); // undefined 출력
+    let width = 300;
+    width = undefined;
+    alert(width); // undefined
+
+    typeof undefined; // undefined
+    typeof 0; // number
+    typeof 10n; // bigint
+    typeof true; // boolean
+    typeof foo; // string
+    typeof Symbol("id"); // symbol
+    typeof Math; // object
+    typeof null; // object
+    typeof alert; // function
+</script>

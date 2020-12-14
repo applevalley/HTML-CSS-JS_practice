@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#fff; 
+        }
+        form fieldset{
+            margin-bottom:25px; 
+        }
+        form legend{
+            font-size:15px;
+            font-weight:600; 
+        }
+        .reg {
+            font-size:14px;
+            width:110px;
+            color:#390;
+            font-weight:bold;		
+            float:left;
+            text-align:right;
+            margin-right:10px;
+        }	 
+        form ul li{
+            list-style:none; 
+            margin: 15px 0;	
+            font-size:14px;	
+        }
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="stu_num">학번</label>
+                    <input type="number" id="stu_num">
+                </li>
+                <li>
+                    <label class="reg" for="stu_name">이름</label>
+                    <input type="text" id="stu_name">
+                </li>
+                <li>
+                    <label class="reg" for="major">학과</label>
+                    <select id="major">
+                        <optgroup label="공과대학">
+                            <option value="archi">건축학과</option>
+                            <option value="mech">기계공학과</option>
+                            <option value="indu">산업공학과</option>
+                            <option value="elec">건축학과</option>
+                            <option value="comp">컴퓨터공학과</option>
+                            <option value="chem">화학과</option>
+                        </optgroup>
+                        <optgroup label="인문대학">
+                            <option value="hist">사학과</option>
+                            <option value="lang">어문학부</option>
+                            <option value="philo">철학</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
