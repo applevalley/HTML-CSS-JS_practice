@@ -1,0 +1,95 @@
+<script>
+    // 단항 연산자 -
+    let x = 1;
+    x = -x
+    alert(x); // -1 부호를 바꿔준다
+
+    // 이항 연산자
+    let x = 1, y = 3;
+    alert(y - x); // 2 뺄셈을 해준다
+
+    alert(5 % 2); // 나머지 1 출력
+    alert(8 % 3); // 나머지 2 출력
+
+    alert(2 ** 2); // 4
+    alert(4 ** (1/2)); // 2(1/2 거듭제곱)
+
+    let s = "my" + "string";
+    alert(s); // mystring
+    
+    alert('1' + 2); // "12"
+    alert(2 + '1'); // "21"
+    alert(2 + 2 + '1'); // "41" -- "221"이 아니다!!
+
+    alert(8 - '4'); // 2, '4'를 숫자로 바꾼다
+    alert('9' / '3'); // 3, 두 피연산자가 숫자로 바뀐 뒤 연산이 진행된다.
+
+    let x = 1;
+    alert(+x); // 1 숫자에는 아무 영향 없음
+
+    let y = -2;
+    alert(+y); // -2
+
+    alert(+true); // 1 // 숫자형이 아닌 피연산자는 숫자형으로 변화
+    alert(+""); // 0
+
+    let apple = "2";
+    let lemon = "3";
+    alert(apple + lemon); // 23 이항 덧셈 연산자는 문자열을 연결함
+    alert(+apple + +lemon); // 5 이항 덧셈 연산자가 적용되기 전 피연산자들이 숫자형으로 변화했다!
+    alert(Number(apple) + Number(lemon)); // 같은 동작을 하지만 더 긴 코드
+
+    let x = 2 * 2 + 1;
+    alert(x) // 5
+
+    let a = 1;
+    let b = 2;
+    let c = 3 - (a = b + 1);
+
+    alert(a); // 3
+    alert(c); // 0
+
+    let a, b, c;
+    a = b = c = 2 + 2;
+    alert(a); // 4
+    alert(b); // 4
+    alert(c); // 4
+
+    c = 2 + 2;
+    b = c;
+    a = c;
+
+    let n = 2;
+    n = n + 5;
+    n = n * 2;
+
+    let n = 2;
+    n += 5 // 2 + 5
+    n *= 2 // (2 + 5) * 2
+    alert(n) // 14
+
+    let n = 2;
+    n *= 3 + 5;
+    alert(n); // 16 *=의 우측이 먼저 평가된다(우선순위)
+
+    let counter = 2;
+    counter++; // + 1과 동일
+    alert(counter); // 3
+
+    let counter = 2;
+    counter--; // - 1과 동일
+    alert(counter); // 1
+
+    let counter = 1;
+    let a = counter++; 
+    alert(a); // 1!  만약 ++counter였다면 2가 반환될 것. counter++는 증가는 시키지만 증가 전의 기존 값을 반환
+
+    let counter = 0;
+    alert(++counter); // 값을 우선 증가시키고 그 값을 바로 사용하려면 전위형으로 사용해야 한다.
+
+    let counter = 1;
+    alert(2 * ++counter); // 4 먼저 카운터가 늘어나 2가 된 후 2 * 2 -> 4가 된다. 후위형이었다면 2가 나올 것
+
+    let a = (1 + 2, 3 + 4);
+    alert(a); // 7 (3 + 4)
+</script>
