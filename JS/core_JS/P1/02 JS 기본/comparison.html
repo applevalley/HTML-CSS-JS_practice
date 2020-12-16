@@ -1,0 +1,38 @@
+<script>
+    alert( 2 > 1); // t
+    alert( 2 == 1); // f
+    alert( 2 != 1); // t
+
+    let result = 5 > 2; // 비교 결과 변수 할당
+    alert(result); // t
+
+    alert('Z' > 'A'); // t
+    alert('Glow' > 'Glee'); // t
+    alert('Bee' > 'Be'); // t
+
+    alert( true == 1); // t
+    alert( false == 0); // t
+
+    let a = 0;
+    alert(Boolean(a)); // f
+
+    let b = "0";
+    alert(Boolean(b)); // t
+
+    alert(a == b); // t
+
+    alert(0 == false); // t
+    alert('' == false); // t
+    alert(0 === false); // f, 피연산자의 형이 다르기 때문
+
+    alert(null === undefined); // f
+    alert(null == undefined); // t
+
+    alert(null > 0); // f (1)
+    alert(null == 0); // f (2)
+    alert(null >= 0); // t (3)
+
+    alert(undefined > 0); // f (1)
+    alert(undefined < 0); // f (2)
+    alert(undefined == 0); // f (3)
+</script>
