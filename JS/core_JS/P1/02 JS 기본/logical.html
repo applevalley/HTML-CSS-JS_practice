@@ -1,0 +1,69 @@
+<script>
+    // alert(true || true);  // t
+    // alert(false || true);  // t
+    // alert(true || false);  // t
+    // alert(false || false);  // f
+
+    // if (1 || 0) {  // if(true || false)
+    //     alert('true');  // t
+    // }
+
+    // let hour = 9;
+    // if (hour < 10 || hour > 18) {
+    //     alert('영업시간이 아닙니다.');
+    // }
+
+    // let hour = 12;
+    // let isWeekend = true;
+    // if (hour < 10 || hour > 18 || isWeekend) {
+    //     alert('영업시간이 아닙니다.'); // 주말이라서
+    // }
+    
+    // alert( 1 || 0); // 1
+    // alert(null || 1); // 1
+    // alert(null || 0 || 1); // 1 (마지막 1이 true이기에 1 반환)
+    // alert(undefined || null || 0); // 0 (모두 false이기에 마지막 값 반환)
+
+    // let firstName = "";
+    // let lastName = "";
+    // let nickName = "apple";
+    // alert(firstName || lastName || nickName || "test123"); // apple
+
+    // true || alert("hello"); // alert문이 실행되지 않음! true를 만나자마자 평가를 멈추기 때문에
+    // false || alert("이건 출력됩니다"); // 실행됨! 첫 피연산자가 false이기에  
+
+    // alert(true && true);  // t
+    // alert(false && true);  // f
+    // alert(true && false);  // f
+    // alert(false && false);  // f
+
+    // let hour = 12;
+    // let minute = 30;
+    // if (hour == 12 && minute == 30) {
+    //     alert("현재 시각은 12시 30분입니다.");
+    // }
+
+    // if (1 && 0) { // 숫자형이지만 논리형으로 바뀌어 true && false가 된다.
+    //     alert("if문 안에 false가 들어있어 실행되지 않습니다.");
+    // }
+
+    // // 첫 피연산자가 true이면, AND는 두번째 피연산자를 반환한다.
+    // alert(1 && 0); // 0
+    // alert(1 && 5); // 5
+
+    // // 첫 피연산자가 false이면, AND는 첫 피연산자를 반환하고, 두번째는 무시한다.
+    // alert(null && 5); // null
+    // alert(0 && "아무거나 오든지 말든지"); // 0
+
+    // alert(1 && 2 && null && 3); // null
+    // alert(1 && 2 && 3); // 3(마지막 값) 피연산자가 모두 true이기 때문
+
+    // alert(!true); // f
+    // alert(!0); // t
+
+    // alert(!!"non-empty"); // t
+    // alert(!!null); // f
+
+    // alert(Boolean("non-empty")); // t
+    // alert(Boolean(null)); // f
+</script>
