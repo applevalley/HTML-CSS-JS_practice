@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+        }
+        .bg1 {
+            background: url(image/bg4.jpg) no-repeat left top;
+            background-size: auto;
+        }
+        .bg2 {
+            background: url(image/bg4.jpg) no-repeat left top;
+            background-size: contain;  /* 요소 안에 모든 배경 이미지가 표시 */
+        }
+        .bg3 {
+            background: url(image/bg4.jpg) no-repeat left top;
+            background-size: cover;  /* 요소 전체를 모두 덮도록 이미지를 확대하거나 축소 */
+        }
+        .bg4 {
+            background: url(image/bg4.jpg) no-repeat left top;
+            background-size: 200px 150px; /* 크기가 하나만 주어지면 너비 값으로 인식 */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1"></div>
+    <br>
+    <div class="bg2"></div>
+    <br>
+    <div class="bg3"></div>
+    <br>
+    <div class="bg4"></div>
+    <br>
+</body>
+</html>

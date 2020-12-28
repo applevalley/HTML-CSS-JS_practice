@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            padding: 35px;
+            border: 5px dotted #222;
+            background: skyblue;
+            margin-bottom: 20px;
+        }
+        .bg1 {
+            background-clip: border-box;
+        }
+        .bg2 {
+            background-clip: padding-box;
+        }
+        .bg3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1">
+        <p>토마토에 포함된 라이코펜 함량은 토마토 한개 분량이야!</p>
+    </div>
+    <div class="bg2">
+        <p>토마토에 포함된 라이코펜 함량은 토마토 한개 분량이야!</p>
+    </div>
+    <div class="bg3">
+        <p>토마토에 포함된 라이코펜 함량은 토마토 한개 분량이야!</p>
+    </div>
+</body>
+</html>
