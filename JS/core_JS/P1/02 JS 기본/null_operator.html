@@ -1,0 +1,29 @@
+<script>
+    // x = (a !== null && a !== undefined) ? a : b;
+
+    // let firstName = null;
+    // let lastName = null;
+    // let nickName = "supercoder";
+
+    // null, undefined가 아닌 첫 피연산자
+    // alert(firstName ?? lastName ?? nickName ?? "Anomymous") // nickName
+
+    // let height = 0;
+    // alert(height || 100); // 100
+    // alert(height ?? 100); // 0
+
+    // let height = null;
+    // let width = null;
+
+    // let area = (height ?? 100) * (width ?? 50);
+    // alert(area); // 5000
+
+    // 괄호를 쓰지 않으면..
+    // let area = height ?? 100 * width ?? 50; // 100 * width가 먼저 실행되어버릴것
+    // 따라서 let area = height ?? (100 * width) ?? 50;과 같은 결과가 나와버린다.
+
+    let x = 1 && 2 ?? 3; // SyntaxError: Unexpected token '??'
+
+    let x = (1 && 2) ?? 3; // 오류안남
+    alert(x); // 2
+</script>
